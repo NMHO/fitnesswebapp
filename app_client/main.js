@@ -24,6 +24,12 @@
         controller: 'profileCtrl',
         controllerAs: 'vm'
       })
+      // tilføjet
+      .when('/userside', {
+        templateUrl: '/userside/userside.view.jade',
+        controller: 'usersideCtrl',
+        controllerAs: 'vm'
+      })
       .otherwise({redirectTo: '/'});
 
     // use the HTML5 History API
